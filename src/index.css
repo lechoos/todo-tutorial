@@ -1,0 +1,96 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	min-height: 100vh;
+	font-family: Arial, Helvetica, sans-serif;
+	background: rgb(97, 214, 183);
+	background: linear-gradient(180deg, rgba(97, 214, 183, 1) 0%, rgba(36,126,136,1) 100%);
+}
+
+button {
+	padding: 1em 2em;
+	cursor: pointer;
+	color: royalblue;
+	background: transparent;
+	border: 3px solid royalblue;
+	border-radius: 8px;
+	transition: 0.5s;
+}
+
+button:hover {
+	color: #fff;
+	background-color: royalblue;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 4em;
+	margin-top: 7em;
+}
+
+.app__title {
+	margin-top: 1em;
+	font-size: 4rem;
+	text-align: center;
+}
+
+.list__input-container {
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+	gap: 3em;
+}
+
+.list__input {
+	padding: 0.5em 1em;
+	font-size: 1.5rem;
+	background-color: rgba(65, 105, 225, 0.43);
+	border: none;
+	border-radius: 4px;
+}
+
+.list__input:focus {
+	color: #fff;
+	outline: none;
+	caret-color: #fff;
+}
+
+.list {
+	margin-top: 3em;
+	margin-inline: 2em;
+	padding: 2em 4em;
+	background-color: #ffffffa0;
+	border-radius: 16px;
+}
+
+.list__item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 1.8rem;
+	list-style-type: none;
+}
+
+.list__item-buttons > :first-child {
+	margin-right: 1.5em;
+}
+
+.list__item:is(:not(:first-child)) {
+	padding-top: 1em;
+}
+
+.list__item:is(:not(:last-child)) {
+	padding-bottom: 1em;
+	border-bottom: 1px solid #4169e16e;
+}
